@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "粉丝牌",
+  "description": "在进入直播间的时候，帮助你自动戴上主播的粉丝牌。",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/icon.png"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "permissions": [
+    "cookies",
+    "webNavigation",
+    "webRequest"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  }
+}
